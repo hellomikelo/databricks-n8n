@@ -1,8 +1,8 @@
-# databricks-n8n
+# 🧱 databricks-n8n
 
 Self-host [n8n](https://n8n.io/) as a [Databricks Apps](https://docs.databricks.com/en/dev-tools/databricks-apps/index.html)!
 
-## Directory Structure
+## 🗂️ Directory Structure
 
 The basic Databricks Apps directory structure:
 
@@ -19,9 +19,9 @@ The basic Databricks Apps directory structure:
 - `app.py`: Your main app logic.
 - `app.yaml` (optional): Your app configurations. Contains the entrypoint command (e.g. `python app.py`) and any environmental variables. This is where you define the application port as 8000 (required by Databricks Apps). 
 - `requirements.txt` (optional): Dependencies required for the project.
-- `/utils`: Utility functions for initializing NodeJS in Python.
+- `utils/`: Utility functions for initializing NodeJS in Python.
 
-## Installation
+## ⚙️ Installation
 
 To install and deploy this app in Databricks Apps, clone the repository to your computer and either manually upload these files to your Databricks workspace, or sync the files to your Databricks workspace via Databricks SDK, i.e.,
 
@@ -35,7 +35,7 @@ Once the app is running, you can click the app URL to use it.
 
 Click on the "Logs" tab to view app logs.
 
-## Usage
+## 👷‍♂️ Usage
 
 To make Databricks services accessible in n8n, first set up Databricks credentials in n8n using your personal access tokens (PAT).
 
@@ -43,7 +43,7 @@ Then you can use n8n's [HTTP node](https://docs.n8n.io/integrations/builtin/core
 
 For inspiration on what workflows you can create, see [n8n workflow automation templates](https://n8n.io/workflows/).
 
-## Note
+## 🗒️ Note
 
 By default, n8n uses SQLite to save credentials, past executions, and workflows. n8n also supports PostgresDB, which you can set in app.yaml using the environment variable `DB_TYPE`. See [n8n docs](https://docs.n8n.io/hosting/configuration/supported-databases-settings/) for details.
 
