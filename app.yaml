@@ -3,5 +3,3 @@ env:
     value: 8000
   - name: N8N_HOST 
     value: 0.0.0.0
-  - name: HOST_BIND
-    value: 0.0.0.0
